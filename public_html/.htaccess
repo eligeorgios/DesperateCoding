@@ -1,0 +1,5 @@
+# HTID:2936948: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:2936948:
+
+ErrorDocument 404 http://slate-coding.000webhostapp.com/err/404/command-prompt/404.html
