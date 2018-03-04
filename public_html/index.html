@@ -1,296 +1,277 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
 
 <head>
-
-
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
- <meta name="viewport" content="width=device-width, initial-scale=1">
-
- <title>Desperate Coding</title>
-
-
- <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Merriweather:400,300'>
- <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css'>
-
- <link rel="stylesheet" href="https://desperate-coding.000webhostapp.com/css/style.css">
-
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
- <link rel="shortcut icon" type="image/png" href="/img/fav.png"/>
- <link rel="shortcut icon" type="image/png" href="http://desperate-coding.000webhostapp.com/img/fav.png"/>
-
- <noscript>
-    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Merriweather:400,300' rel='stylesheet' type='text/css'>
-    <link href='https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css' rel='stylesheet' type='text/css'>
-  </noscript>
-
-
- <script>
-  // CREDITS
-  // THIS WONDERFULL WEB DESIGN WAS STOLEN FROM ALEX MACARTHUR'S HOME PAGE:
-  // https://www.macarthur.me/
-  
-  // Google Analytics here.
-  (function(i, s, o, g, r, a, m) {
-   i["GoogleAnalyticsObject"] = r;
-   (i[r] =
-    i[r] ||
-    function() {
-     (i[r].q = i[r].q || []).push(arguments);
-    }), (i[r].l = 1 * new Date());
-   (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-   a.async = 1;
-   a.src = g;
-   m.parentNode.insertBefore(a, m);
-  })(
-   window,
-   document,
-   "script",
-   "https://www.google-analytics.com/analytics.js",
-   "ga"
-  );
-  
-  ga("create", "UA-98707492-1", "auto");
-  ga("send", "pageview");
-  
-  // I DONT want this page to be in an iframe.
-  if (window !== top) top.location = window.location;
- </script>
-
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Desperate Coding</title>
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+	<link rel="icon" href="favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
-
-
- <style type="text/css">
-  #browserWarning {
-   display: none;
-  }
-  main {
-  }
- </style>
-
-
- <!--[if IE 5]>
-
-<style type="text/css">
-  #browserWarning { display:block; }
-	main {display:none;}
-</style>
-
-<![endif]-->
-
- <!--[if IE 6]>
-
-<style type="text/css">
-  #browserWarning { display:block; }
-	main {display:none;}
-</style>
-
-<![endif]-->
-
-
- <!--[if IE 7]>
-
-<style type="text/css">
-  #browserWarning { display:block; }
-	main {display:none;}
-</style>
-
-<![endif]-->
-
- <!--[if IE 8]>
-
-<style type="text/css">
-  #browserWarning { display:block; }
-	main {display:none;}
-</style>
-
-<![endif]-->
-
- <!--[if IE 9]>
-
-<style type="text/css">
-  #browserWarning { display:block; }
-	main {display:none;}
-</style>
-
-<![endif]-->
-
-
- <noscript>
-    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Merriweather:400,300' rel='stylesheet' type='text/css'>
-    <link href='https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css' rel='stylesheet' type='text/css'>
-  </noscript>
-
- <div id="browserWarning"><br/><br/><br/><br/>
-  <div class="container">
-   <div class="alert alert-danger alert-dismissable fade in"> <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-    <h1>Your browser is not supported</h1><br/>
-    <p>
-     <h4>Sorry, but we only support <code>webkit</code> based browsers. Edge is OK, but IE is outdated. Please update your browser or click <a href="https://www.google.com/chrome/browser/desktop/index.html">here</a> to update.</p></div></div></div></div>
-	
- <main class="main" id="main">
-  <section class="HomeSection HomeSection--main" style="height:332px" id="top">
-   <div class="HomeSection-container">
-    <h1 class="HomeHeader" id="homeHeader">This is Slate Coding.</h1>
-    <hr class="HomeSection-divider"></hr>
-    <div class="SectionsNav SectionsNav--featured">
-     <a class="SectionsNav-link" href="#about" onclick="_gaq.push(['_trackEvent', 'link', 'clicked', 'About Me']);">About Us</a>
-     <a class="SectionsNav-link" href="#work" onclick="_gaq.push(['_trackEvent', 'link', 'clicked', 'My Work']);">Our Work</a>
-     <a class="SectionsNav-link" href="#contact" onclick="_gaq.push(['_trackEvent', 'link', 'clicked', 'Get in Touch']);">Get in Touch</a>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
-   </div>
-   <div class="SocialNavHolder">
-    <ul class="SocialNav SocialNav--featured enter-icons">
-     <li class="SocialNav-item">
-      <a href="https://codepen.io/desperate-coding/">
-       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M80 6h-9v14h9 M114 6h-9 v14h9 M111 13h-6 M77 13h-6 M122 20V6l11 14V6 M22 16.7L33 24l11-7.3V9.3L33 2L22 9.3V16.7z M44 16.7L33 9.3l-11 7.4 M22 9.3l11 7.3 l11-7.3 M33 2v7.3 M33 16.7V24 M88 14h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14 M15 8c-1.3-1.3-3-2-5-2c-4 0-7 3-7 7s3 7 7 7 c2 0 3.7-0.8 5-2 M64 13c0 4-3 7-7 7h-5V6h5C61 6 64 9 64 13z"/>
-</svg>
-      </a>
-     </li>
-    </ul>
-   </div>
-   <div class="BottomNav is-invisible" id="bottomNav">
-    <ul class="SocialNav SocialNav--corner">
-     <li class="SocialNav-item">
-      <a href="https://codepen.io/desperate-coding/">
-       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M80 6h-9v14h9 M114 6h-9 v14h9 M111 13h-6 M77 13h-6 M122 20V6l11 14V6 M22 16.7L33 24l11-7.3V9.3L33 2L22 9.3V16.7z M44 16.7L33 9.3l-11 7.4 M22 9.3l11 7.3 l11-7.3 M33 2v7.3 M33 16.7V24 M88 14h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14 M15 8c-1.3-1.3-3-2-5-2c-4 0-7 3-7 7s3 7 7 7 c2 0 3.7-0.8 5-2 M64 13c0 4-3 7-7 7h-5V6h5C61 6 64 9 64 13z"/>
-</svg>
-      </a>
-     </li>
-    </ul>
-    <div class="SectionsNav SectionsNav--corner">
-     <span id="menuToggle">Menu</span>
-     <div class="MenuItemsWrapper" id="menuItemsWrapper">
-      <a class="SectionsNav-link" href="#top">Top</a>
-      <a class="SectionsNav-link" href="#about" onclick="_gaq.push(['_trackEvent', 'link', 'clicked', 'About Me']);">About Us</a>
-      <a class="SectionsNav-link" href="#work" onclick="_gaq.push(['_trackEvent', 'link', 'clicked', 'My Work']);">Our Work</a>
-      <a class="SectionsNav-link" href="#contact" onclick="_gaq.push(['_trackEvent', 'link', 'clicked', 'Get in Touch']);">Get in Touch</a>
-     </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Desperate Coding.<h1>
+            <h2>This is the Legion of the Desperate Programmers.</h2>
+           <!-- <a href="#" class="btn-rounded-white">Download Resume</a> -->
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
     </div>
-   </div>
-  </section>
-  <section class="HomeSection HomeSection--notTop HomeSection--about" id="about">
-   <div class="HomeSection-wrapper">
-    <h1 class="HomeSection-header">We love computer programming.</h1>
-    <div class="HomeSection-container">
-     <hr class="HomeSection-divider"></hr>
-     <div class="DescriptionHolder">
-      <p>
-       From web development to full-scale Windows GUI programming, all the way to hard-core Java, Scala, and Python coding, there's nothing that doesn't interest us.
-      </p>
+    <!-- End #lead -->
 
-     </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Us</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Here at the Legion, we work <strong>tirelessly</strong> to create <strong>rust free code</strong>. We have <strong>no mercy</strong> on bugs. We have conquered <strong>2 projects</strong>
+                        and we are ready to smash through <strong>1 more</strong>.
+                        <strong>Our Github Profile</strong> is our dominion. <strong>This website</strong> is our castle. Our <strong>file folders</strong> represent our subjects; our <strong>code editors</strong> are our officers.
+                        <strong>Sentry.io</strong> is our <strong>court of justice</strong>. <strong>Our keyboards are our soldiers.</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-   </div>
-  </section>
-  <section class="HomeSection HomeSection--notTop HomeSection--work" id="work">
-   <div class="HomeSection-wrapper">
-    <h1 class="HomeSection-header">We create apps and pages.</h1>
-    <div class="HomeSection-container HomeSection-container">
-     <hr class="HomeSection-divider"></hr>
-     <p>
-      Take a look at what we built. Just a little bit of Windows Desktop Apps, and just a little bit more of HTML bits.
-     </p><br /><br />
-     <div class="WorkList" id="workList">
-      <div class="WorkList-item">
-       <h3 class="WorkList-title">Arrolle</h3>
-       <a class="Worklist Worklist-link" href="https://cortanabatch.zohosites.com/arrolle.html">Learn More</a>
-       <p class="WorkList-description">
-        A comprehensive Windows application for encrypting your important files.
-       </p>
-      </div>
-      <div class="WorkList-item">
-       <h3 class="WorkList-title">Hex Digital Clock</h3>
-       <a class="Worklist Worklist-link"  href="https://codepen.io/slate-coding/full/dzwpzZ">See it on Codepen</a>
-       <p class="WorkList-description">
-        Just another digital HTML clock - only it displays the time in Hexadecimal!
-       </p>
-      </div>
-      <div class="WorkList-item">
-       <h3 class="WorkList-title">Invisible Ink</h3>
-       <a class="Worklist Worklist-link"  href="https://codepen.io/slate-coding/full/qXMNwx">Check it out</a>
-       <p class="WorkList-description">
-        Now you can hide spoilers from the public - in CSS only.
-       </p>
-      </div>
-	
-      <div class="WorkList-item">
-       <h3 class="WorkList-title">Something</h3>
-       <a class="WorkList-link" href="https://codepen.io/slate-coding/full/qXMNwx">Uhhh.</a>
-       <p class="WorkList-description">
-        You will see more here soon.
-       </p>
-      </div>
-      <div class="WorkList-item">
-       <h3 class="WorkList-title">Something</h3>
-       <a class="WorkList-link" href="https://codepen.io/slate-coding/full/qXMNwx">Uhhh.</a>
-       <p class="WorkList-description">
-        You will see more here soon.
-       </p>
-      </div>
-      <div class="WorkList-item">
-       <h3 class="WorkList-title">Something</h3>
-       <a class="WorkList-link" href="https://codepen.io/slate-coding/full/qXMNwx">Uhhh.</a>
-       <p class="WorkList-description">
-        You will see more here soon.
-       </p>
-      </div>
+    <!-- End #about -->
 
-     </div>
-     <ul class="SliderButtons">
-      <li>
-       <a class="SliderButtons-button" id="slickPrevious">
-        <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M7.701,14.276l9.586-9.585c0.879-0.878,2.317-0.878,3.195,0l0.801,0.8c0.878,0.877,0.878,2.316,0,3.194  L13.968,16l7.315,7.315c0.878,0.878,0.878,2.317,0,3.194l-0.801,0.8c-0.878,0.879-2.316,0.879-3.195,0l-9.586-9.587  C7.229,17.252,7.02,16.62,7.054,16C7.02,15.38,7.229,14.748,7.701,14.276z" fill="#515151" /></svg>
-       </a>
-      </li>
-      <li>
-       <a class="SliderButtons-button" id="slickNext">
-        <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M24.291,14.276L14.705,4.69c-0.878-0.878-2.317-0.878-3.195,0l-0.8,0.8c-0.878,0.877-0.878,2.316,0,3.194  L18.024,16l-7.315,7.315c-0.878,0.878-0.878,2.317,0,3.194l0.8,0.8c0.878,0.879,2.317,0.879,3.195,0l9.586-9.587  c0.472-0.471,0.682-1.103,0.647-1.723C24.973,15.38,24.763,14.748,24.291,14.276z" fill="#515151" /></svg>
-       </a>
-      </li>
-     </ul>
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="September 2015 – September 2016">
+                <h3>Employer Name</h3>
+                <h4>Job Title</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                </p>
+            </div>
 
-     <p class="HomeSection-description">
-      <a id="justAsk" href="#contact" onclick="_gaq.push(['_trackEvent', 'link', 'clicked', 'Just Ask']);"></a>
-     </p>
+            <div data-date="September 2015 – September 2016">
+                <h3>Employer Name</h3>
+                <h4>Job Title</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                </p>
+            </div>
+
+            <div data-date="September 2015 – September 2016">
+                <h3>Employer Name</h3>
+                <h4>Job Title</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                </p>
+            </div>
+        </div>
     </div>
-   </div>
-  </section>
-  <section class="HomeSection HomeSection--notTop HomeSection--contact" id="contact">
-   <div class="HomeSection-wrapper">
-    <h1 class="HomeSection-header">Get in touch with us.</h1>
-    <div class="HomeSection-container">
-     <hr class="HomeSection-divider"></hr>
-     <p class="HomeSection-description">
-      Questions? Comments? Did you find a baby Orangutan? Tell us!
-     </p>
-     <div id="StatusMessages">
-     </div>
-     <form id="ContactForm" class="ContactForm" action="https://formspree.io/slate-coding@outlook.com" method="POST">
-      <input id="formName" type="text" name="name" placeholder="Name" required>
-      <input id="formEmail" type="email" name="_replyto" placeholder="Email Address" required>
-      <textarea id="formMessage" name="message" placeholder="Enter your message."></textarea>
-      <input type="text" name="_gotcha" style="display:none" />
-      <input class="ContactForm-submit" type="submit" value="Submit">
-     </form>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>University of Ottawa</h3>
+            <span class="education-date">Sept 2016 - Sept 2017</span>
+            <h4>Bachelor of Science in Computer Science</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+            </p>
+        </div>
+        <!-- End .education-block -->
+
+        <div class="education-block">
+            <h3>University of Ottawa</h3>
+            <span class="education-date">Sept 2016 - Sept 2017</span>
+            <h4>Bachelor of Science in Computer Science</h4>
+            <ul>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
     </div>
-   </div>
-  </section>
- </main>
- <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
- <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <!-- End #education -->
 
- <script src="https://slate-coding.000webhostapp.com/js/index.js"></script>
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Project Name Here</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
 
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Project Name Here</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Ruby</li>
+            <li>Go</li>
+            <li>Node.js</li>
+            <li>AngularJs</li>
+            <li>React</li>
+            <li>Elixir</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C#</li>
+            <li>C++</li>
+            <li>Ruby on Rails</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Ruby</li>
+            <li>Go</li>
+            <li>Node.js</li>
+            <li>AngularJs</li>
+            <li>React</li>
+            <li>Elixir</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C#</li>
+            <li>C++</li>
+            <li>Ruby on Rails</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/email@email.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2017 YOUR NAME
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
 </body>
 
 </html>
